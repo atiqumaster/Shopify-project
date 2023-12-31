@@ -263,7 +263,10 @@ span.timer-block__num {
   span.timer-block__num {
     font-size: 32px;
 }
+.discount-banner-row-1 {
+    width: 10%;
 }
+  
 }
 
 @media (max-width: 992px) {
