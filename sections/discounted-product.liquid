@@ -1,0 +1,126 @@
+{{ 'discounted-product.css' | asset_url | stylesheet_tag }}
+
+<section class="discount-banner-disapper" >
+  <div class="discount-banner-wrapper">
+    <div class="discount-banner-row-1">
+      <div class="discount-banner-bg-img-wrapper">
+        <div class="discount-banner-bg-circle">
+          <img src="{{ 'ellipse-circle.svg' | asset_url   }}" width="100%" height="auto">
+        </div>
+        <div class="discount-banner-bg-rectangle">
+          <img src="{{ 'rectangle-group.png' | asset_url   }}" width="100%" height="auto">
+        </div>
+      </div>
+    </div>
+    <div class="discount-banner-row-2">
+      <div class="discount-banner-text">
+        <h2>{{ section.settings.heading }}</h2>
+        <p>{{ section.settings.description }}</p>
+      </div>
+    </div>
+           {% assign sortedProducts = collections.all.products | sort: 'updated_at' | reverse %}
+{% if sortedProducts.size > 0 %}
+    <div class="discount-banner-row-3">
+      <div class="discount-banner-product-img">
+          <img src="{{ sortedProducts[0].featured_image | img_url: '600x600' }}"   />
+      </div>
+    </div>
+    <div class="discount-banner-row-4">
+      <div class="discount-banner-product-description">
+        <h3>{{ sortedProducts[0].title }}</h3>
+          <div class="product-vendor-category">
+            <h5>
+              Vendor :<span>{{sortedProducts[0].vendor }}</span>
+            </h5>
+            <h5>
+              Category : <span>{{ sortedProducts[0].type }}</span>
+            </h5>
+          </div>
+          <p>{{ sortedProducts[0].description }}</p>
+          <div class="banner-product-add-to-cart">
+            <a href="{{sortedProducts[0].url}}" class="banner-add-to-cart-btn">Add To Cart </a>
+          </div>
+      
+      </div>
+    </div>
+    {% endif %}
+    <div class="discount-banner-row-5">
+      <div class="discount-banner-productoff-timer">
+        <div class="product-discount-timer-popup">
+           {% render 'count-down-timer' %} 
+          
+   </div>
+        <h4>{{ section.settings.notation }}</h4>
+        <div class="discount-product-off">
+          <h5>Get <span>{{ section.settings.off }}%</span> off</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+
+  "name": "Discounted Product",
+  "settings": [
+      {
+    "type": "text",
+    "id": "heading",
+    "label": "Discount Title",
+    "default": "Get Discouct "
+  },
+  {
+    "type": "richtext",
+    "id": "description",
+    "label": "Discount Description",
+    "default": "<p>Enter Discount banner text in admin  panel</p>"
+  },
+    {
+  "type": "text",
+  "id": "notation",
+  "label": "Timer Notation",
+    "default":"Enter Notation admin panel"
+ },
+      {
+  "type": "text",
+  "id": "off",
+  "label":"Product Off Value",
+  "default":"20"
+ },
+       {
+            "type": "text",
+            "id": "hr",
+            "label": "Enter Hours",
+            "default": "12",
+            "info": "e.g. 01 - 24"
+        },
+         {
+            "type": "text",
+            "id": "min",
+            "label": "Enter Minutes",
+            "default": "24",
+            "info": "e.g. 01 - 60"
+        },
+         {
+            "type": "text",
+            "id": "sec",
+            "label": "Enter Secounds",
+            "default": "44",
+            "info": "e.g. 01 - 60"
+        }
+  ],
+  "presets": [
+   {
+    "name": "Discounted Product Banner"
+   }
+ ]
+
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

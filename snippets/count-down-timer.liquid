@@ -1,0 +1,70 @@
+
+
+ <div class="timer"> 
+
+
+   <div class="timer-display"> 
+ 
+     <div class="timer-block"> 
+       <span class="timer-block__unit">HR</span> 
+       <span class="timer-block__num js-timer-hours">{{ section.settings.hr }}</span> 
+     </div> 
+
+     <div class="timer-block"> 
+       <span class="timer-block__unit">MIN</span>
+       <span class="timer-block__num js-timer-minutes">{{ section.settings.min }}</span> 
+     </div> 
+
+     <div class="timer-block"> 
+        <span class="timer-block__unit">SEC</span> 
+       <span class="timer-block__num js-timer-seconds">{{ section.settings.sec }}</span> 
+
+     </div> 
+
+   </div> 
+
+ </div> 
+
+
+<script type="text/javascript">
+  const date = new Date();
+
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+let hr = document.querySelector('.js-timer-hours').innerText;
+let min = document.querySelector('.js-timer-minutes').innerText;
+let sec = document.querySelector('.js-timer-seconds').innerText;
+  
+let currentDate = `${month}-${day}-${year}`;
+let getTimeUser =  hr+":"+min+":"+sec;
+ let combinedDateTime  = currentDate + ' ' + getTimeUser;
+
+  
+console.log(combinedDateTime);
+const newDate = new Date(combinedDateTime).getTime();
+  console.log(newDate);
+const countdown = setInterval(() =>{
+  
+const date = new Date().getTime();
+  console.log(date);
+const diff = newDate - date;
+
+const hours =  Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.querySelector(".js-timer-seconds").innerHTML = seconds < 10 ? '0' + seconds : seconds;
+      document.querySelector(".js-timer-minutes").innerHTML = minutes < 10 ? '0' + minutes :minutes;
+      document.querySelector(".js-timer-hours").innerHTML = hours < 10 ? '0' + hours : hours;
+   
+if(diff <= 0){
+  clearInterval(countdown)
+        document.querySelector(".timer-display").innerHTML = 'Time Expire ';
+   document.querySelector(".discount-banner-disapper").style.display = 'none';
+}
+
+}, 1000)
+  
+</script>
+

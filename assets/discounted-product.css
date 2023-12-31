@@ -1,0 +1,236 @@
+h1, h2 , h3 , h4 , h5 ,h6 {
+  padding: 0;
+  margin: 0;
+}
+.timer-display {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+}
+.discount-banner-wrapper {
+    position: relative;
+    display: flex;
+    background: linear-gradient(180deg, #F3AA54 0%, #F29629 100%);
+    justify-content: space-between;
+    padding: 25px 45px 25px 0px;
+    gap: 24px;
+}
+.discount-banner-text h2 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.discount-banner-text p {
+    color: #FFF;
+    font-family: Inder;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 199.5%;
+}
+.discount-banner-product-description h3 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.product-vendor-category h5 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.discount-banner-product-description p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 153.023%;
+}
+a.banner-add-to-cart-btn {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    text-decoration: none;
+      display: block;
+  text-align:center;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #2693FA 0%, #174E83 100%);
+    padding: 7px 40px;
+}
+.discount-product-off h5 {
+    border-radius: 4px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 172.2%;
+  padding:6px;
+}
+.discount-banner-productoff-timer h4 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 172.2%;
+}
+.product-time-prefix span {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.product-discount-timer-popup {
+    text-align: center;
+}
+
+.product-discount-timer-popup {
+    background: linear-gradient(180deg, #FA7226 0%, #DA2127 100%);
+    border-radius: 5px;
+    width: 338px;
+    height: 79px;
+}
+.product-time-prefix {
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+}
+.product-discount-timer-popup {
+    background: linear-gradient(180deg, #FA7226 0%, #DA2127 100%);
+    border-radius: 5px;
+    width: 338px;
+    padding: 7px 0px;
+   
+}
+.discount-product-off h5 span {
+    font-size: 32px;
+    font-weight: 700;
+}
+.discount-product-off {
+    border-radius: 4px;
+    background: #EF5726;
+    width: 212px;
+    margin: 0 auto;
+}
+.discount-banner-bg-circle {
+    position: absolute;
+    top: 0;
+}
+
+.discount-banner-bg-rectangle {
+    position: absolute;
+    bottom: 0;
+}
+.discount-banner-row-1 {
+    width: 15%;
+}
+.product-vendor-category h5 span {
+    font-weight: 500;
+}
+
+span.timer-block__num {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+  span.timer-block__unit {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+   .timer--expired { 
+
+     display: none; 
+
+   } 
+
+   .timer__title { 
+
+     @extend .paragraph; 
+
+     text-align: center; 
+
+   } 
+
+   .timer-display { 
+
+     display: -webkit-box; 
+
+     display: -ms-flexbox; 
+
+     display: flex; 
+
+     -ms-flex-wrap: wrap; 
+
+         flex-wrap: wrap; 
+
+     -webkit-box-pack: justify; 
+
+         -ms-flex-pack: justify; 
+
+              justify-content: space-evenly; 
+
+
+   } 
+
+   .timer-block { 
+
+     position: relative; 
+
+
+     &:not(:last-child):after { 
+
+       content: ':'; 
+
+       position: absolute; 
+
+        right: -50%;
+    top: 18px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+     } 
+
+   } 
+
+   .timer-block__num, 
+
+   .timer-block__unit { 
+
+     display: block; 
+
+     text-align: center; 
+
+   } 
