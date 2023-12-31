@@ -39,104 +39,6 @@
         "show_text_below": false
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
-    "025c09dc-5202-45e3-8b33-3cc2b16ae167": {
-      "type": "featured-product",
-      "blocks": {
-        "template--21821030203674__025c09dc-5202-45e3-8b33-3cc2b16ae167-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "template--21821030203674__025c09dc-5202-45e3-8b33-3cc2b16ae167-title-1": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "template--21821030203674__025c09dc-5202-45e3-8b33-3cc2b16ae167-price-1": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "template--21821030203674__025c09dc-5202-45e3-8b33-3cc2b16ae167-variant_picker-1": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "template--21821030203674__025c09dc-5202-45e3-8b33-3cc2b16ae167-quantity_selector-1": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "template--21821030203674__025c09dc-5202-45e3-8b33-3cc2b16ae167-buy_buttons-1": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "template--21821030203674__025c09dc-5202-45e3-8b33-3cc2b16ae167-share-1": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "template--21821030203674__025c09dc-5202-45e3-8b33-3cc2b16ae167-text-1",
-        "template--21821030203674__025c09dc-5202-45e3-8b33-3cc2b16ae167-title-1",
-        "template--21821030203674__025c09dc-5202-45e3-8b33-3cc2b16ae167-price-1",
-        "template--21821030203674__025c09dc-5202-45e3-8b33-3cc2b16ae167-variant_picker-1",
-        "template--21821030203674__025c09dc-5202-45e3-8b33-3cc2b16ae167-quantity_selector-1",
-        "template--21821030203674__025c09dc-5202-45e3-8b33-3cc2b16ae167-buy_buttons-1",
-        "template--21821030203674__025c09dc-5202-45e3-8b33-3cc2b16ae167-share-1"
-      ],
-      "settings": {
-        "product": "",
-        "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "584362e8-ec9e-4f11-859b-c1af401af87f": {
       "type": "discounted-product",
       "settings": {
@@ -152,8 +54,6 @@
   },
   "order": [
     "image_banner",
-    "featured_collection",
-    "025c09dc-5202-45e3-8b33-3cc2b16ae167",
     "584362e8-ec9e-4f11-859b-c1af401af87f"
   ]
 }
