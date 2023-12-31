@@ -137,15 +137,15 @@
         "padding_bottom": 36
       }
     },
-    "3e96e240-2c22-4706-9c69-2808a2c1b990": {
+    "584362e8-ec9e-4f11-859b-c1af401af87f": {
       "type": "discounted-product",
       "settings": {
         "heading": "Get Discouct",
         "description": "<p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s<\/p>",
         "notation": "Hurry up to get this Discount",
-        "off": "20",
-        "hr": "23",
-        "min": "38",
+        "off": "23",
+        "hr": "58",
+        "min": "36",
         "sec": "44"
       }
     }
@@ -154,6 +154,6 @@
     "image_banner",
     "featured_collection",
     "025c09dc-5202-45e3-8b33-3cc2b16ae167",
-    "3e96e240-2c22-4706-9c69-2808a2c1b990"
+    "584362e8-ec9e-4f11-859b-c1af401af87f"
   ]
 }
