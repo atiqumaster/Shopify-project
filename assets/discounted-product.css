@@ -243,7 +243,15 @@ span.timer-block__num {
 .discount-banner-row-2 {
     width: 24%;
 }
-   
+   .discount-banner-row-3 {
+    width: 15%;
+}
+.discount-banner-row-4 {
+    width: 22%;
+}
+.discount-banner-row-5 {
+    width: 32%;
+}
 
 @media (max-width: 1200px) { ... }
 
