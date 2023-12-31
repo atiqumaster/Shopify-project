@@ -224,7 +224,9 @@ span.timer-block__num {
      } 
 
    } 
-
+.discount-banner-product-img img {
+    width: 100%;
+}
    .timer-block__num, 
 
    .timer-block__unit { 
