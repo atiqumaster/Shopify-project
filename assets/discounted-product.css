@@ -248,13 +248,15 @@ span.timer-block__num {
     width: 32%;
 }
 
-@media (max-width: 1200px) { ... }
+@media (max-width: 1200px) {
+    .discount-banner-text h2 {
+    font-size: 32px;
+  }
+}
 
 @media (max-width: 992px) {
 
-  .discount-banner-text h2 {
-    font-size: 32px;
-  }
+
 }
 
 @media (max-width: 768px) { ... }
