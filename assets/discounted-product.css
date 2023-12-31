@@ -224,10 +224,7 @@ span.timer-block__num {
      } 
 
    } 
-.discount-banner-product-img img {
-    width: 100%;
-}
-   .timer-block__num, 
+.timer-block__num, 
 
    .timer-block__unit { 
 
@@ -237,6 +234,16 @@ span.timer-block__num {
 
    }
 
+.discount-banner-product-img img {
+    width: 100%;
+}
+.discount-banner-row-1 {
+    width: 8%;
+}
+.discount-banner-row-2 {
+    width: 24%;
+}
+   
 
 @media (max-width: 1200px) { ... }
 
